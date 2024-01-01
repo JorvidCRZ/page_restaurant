@@ -1,0 +1,76 @@
+.background6{
+    height: 60vh;
+    background-color: var(--yellow);
+}
+.background6 img:hover{
+    cursor: pointer;
+    filter: drop-shadow(20px 20px 10px var(--black)) brightness(120%);
+}
+.background6 img::selection {
+    background-color: var(--black);
+}
+.background6 .contener{
+    margin-left: 7rem;
+    color: var(--white);
+}
+.background6 h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.background6 h1:hover{
+    cursor: pointer;
+    color: var(--black);
+    filter: drop-shadow(10px 10px 4px var(--dark_blue));
+}
+.background6 h1::selection{
+    color: var(--yellow);
+    background-color: var(--black)
+} 
+.background6 span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.background6 span:hover{
+    color: var(--black);
+    filter: drop-shadow(10px 10px 4px var(--dark_blue));
+} 
+.background6 span::selection{
+    color: var(--yellow);
+    background-color: var(--black)
+}
+@media (max-width:1200px) {
+    .background6 img{
+        width: 50%;
+    }
+    .background6 .contener {
+        margin-left: 1rem;
+    }
+    .background6 h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .background6 span {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:860px){
+    .background6{
+        height: 45vh;
+    }
+    .background6 .contener {
+        margin-left: 0.8rem;
+    }
+    .background6 h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .background6 span {
+        font-size: 1rem;
+    }
+}
+@media (max-width:570px){
+    .background6 {
+        height: 90vh;
+    }
+}

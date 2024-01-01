@@ -1,0 +1,82 @@
+.background4{
+    height: 135vh;
+    max-width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./asset/background/background3.png);
+} 
+.contain{
+    width: 50%;
+    height: 65%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: var(--white);    
+    filter: opacity(0.9);
+    flex-direction: column;
+    justify-content: center; 
+    border: 10px solid var(--yellow);
+    background-color: var(--dark_blue);
+}
+.contain h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.contain h1:hover{
+    cursor: pointer;
+    color: var(--yellow);
+    filter: drop-shadow(10px 10px 4px var(--black));
+}
+.contain h1::selection{
+    color: var(--yellow);
+    background-color: var(--black)
+}
+.contain span {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.contain span::selection{
+    color: var(--yellow);
+    background-color: var(--black);
+}
+@media (max-width:1200px){
+    .contain{
+        width: 60%;
+        height: 70%;
+    }
+    .contain h1 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    .contain span {
+        line-height: 2;
+        font-size: 1.5rem;
+    } 
+}
+@media (max-width:860px) {
+    .contain {
+        width: 55%;
+        height: 60%;
+    }
+    .contain h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .contain span {
+        font-size: 1rem;
+    }
+}
+@media (max-width:500px){
+    .contain {
+        width: 85%;
+    }
+    .contain h1 {
+        font-size: 1.5rem;
+    }
+    .contain span {
+        line-height: 2.5; 
+        font-size: 0.9rem;
+    }
+}
